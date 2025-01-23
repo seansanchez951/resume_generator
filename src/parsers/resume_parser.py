@@ -50,17 +50,9 @@ def parse_resume(file_path):
     else:
         raise ValueError("Unsupported file format. Please use a DOCX or PDF file.")
     
-if __name__ == "__main__":
-    # Example usage
-    resume_path = input("Enter the path to the resume file: ").strip()
-    try:
-        resume_text = parse_resume(resume_path)
-        resume_text = "\n".join([line.strip() for line in resume_text.split("\n") if line.strip()])
-        resume_text = re.sub(r'\s+', ' ', resume_text)
-        print("\nExtracted Resume Text:\n")
-        print(resume_text)
-    except Exception as e:
-        print(f"Error: {e}")
+
+
+
 
 
 
